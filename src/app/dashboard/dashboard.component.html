@@ -1,0 +1,14 @@
+<p>dashboard works!</p>
+
+@if (flag) {
+    <span>true</span>
+}@else {
+    <span>false</span>
+}
+
+<button (click)="flagClick()"> tata</button>
+
+
+@for (item of arrayLetter; track $index) {
+    <h3 >{{item}}</h3>
+}

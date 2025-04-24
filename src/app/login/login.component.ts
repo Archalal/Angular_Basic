@@ -1,12 +1,25 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-login',
-  imports: [RouterLink],
+  imports: [FormsModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+
+  email:string=""
+  password:string=""
+
+  login(){
+    if(this.email &&this.password){
+      alert(" login sucessfull")
+    }else{
+      alert("unsucessfull")
+    }
+  }
 
 }
